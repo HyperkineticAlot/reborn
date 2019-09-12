@@ -65,6 +65,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         // Basic
         BaseMod.addCard(new Strike_Brown());
         BaseMod.addCard(new Defend_Brown());
+        BaseMod.addCard(new Fester());
     }
 
     @Override
@@ -84,7 +85,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         //BaseMod.loadCustomStringsFile(PowerStrings.class, "Reborn/localization/eng/powers.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "Reborn/localization/eng/relics.json");
         BaseMod.loadCustomStringsFile(KeywordStrings.class, "Reborn/localization/eng/keywords.json");
-        BaseMod.loadCustomStringsFile(UIStrings.class, "Reborn/ocalization/eng/ui.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, "Reborn/localization/eng/ui.json");
     }
 
     @Override

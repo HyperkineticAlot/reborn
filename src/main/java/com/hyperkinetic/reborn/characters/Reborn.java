@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.hyperkinetic.reborn.cards.Defend_Brown;
+import com.hyperkinetic.reborn.cards.Fester;
 import com.hyperkinetic.reborn.cards.Strike_Brown;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
 import com.hyperkinetic.reborn.enums.RebornClassEnum;
@@ -73,6 +74,8 @@ public class Reborn extends CustomPlayer
         starter.add(Defend_Brown.ID);
         starter.add(Defend_Brown.ID);
         starter.add(Defend_Brown.ID);
+
+        starter.add(Fester.ID);
 
         return starter;
     }

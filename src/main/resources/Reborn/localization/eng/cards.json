@@ -7,5 +7,10 @@
   "Reborn:Defend_Brown": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+
+  "Reborn:Fester": {
+    "NAME": "Fester",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Necrotic."
   }
 }

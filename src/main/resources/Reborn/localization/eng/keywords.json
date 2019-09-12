@@ -5,5 +5,13 @@
       "dredge"
     ],
     "DESCRIPTION": "To #yDredge X, return X cards from your discard pile to your hand."
+  },
+
+  "Reborn:NecroticKey": {
+    "PROPER_NAME": "Necrotic",
+    "NAMES": [
+      "necrotic"
+    ],
+    "DESCRIPTION": "Necrotic cards are not shuffled into your draw pile once discarded."
   }
 }

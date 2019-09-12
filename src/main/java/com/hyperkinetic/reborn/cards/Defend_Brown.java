@@ -26,7 +26,7 @@ public class Defend_Brown extends CustomCard
         super(ID, NAME, "Reborn/assets/cards/defend_brown.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.BASIC, CardTarget.SELF);
 
-        this.baseBlock = BLOCK;
+        this.baseBlock = this.block =  BLOCK;
         this.tags.add(BaseModCardTags.BASIC_DEFEND);
     }
 
