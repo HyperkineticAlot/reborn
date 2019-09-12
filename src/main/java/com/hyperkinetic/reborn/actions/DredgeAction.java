@@ -38,7 +38,8 @@ public class DredgeAction extends AbstractGameAction
                 temp.addToBottom(AbstractDungeon.player.discardPile.group.get(i));
             }
 
-            AbstractDungeon.gridSelectScreen.open(temp, this.amount, TEXT[0], false);
+            AbstractDungeon.gridSelectScreen.open(temp, Math.min(this.amount, AbstractDungeon.player.discardPile.size()),
+                    TEXT[0], false);
         }
         else if(!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty())
         {

@@ -66,6 +66,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Strike_Brown());
         BaseMod.addCard(new Defend_Brown());
         BaseMod.addCard(new Fester());
+        BaseMod.addCard(new Excoriate());
     }
 
     @Override

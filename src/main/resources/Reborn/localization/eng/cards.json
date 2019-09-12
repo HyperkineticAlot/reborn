@@ -12,5 +12,10 @@
   "Reborn:Fester": {
     "NAME": "Fester",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Necrotic."
+  },
+
+  "Reborn:Excoriate": {
+    "NAME": "Excoriate",
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 card. NL Dredge 1."
   }
 }
