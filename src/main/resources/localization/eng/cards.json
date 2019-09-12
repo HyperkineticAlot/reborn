@@ -1,0 +1,11 @@
+{
+  "Reborn:Strike_Brown": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+  "Reborn:Defend_Brown": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  }
+}
