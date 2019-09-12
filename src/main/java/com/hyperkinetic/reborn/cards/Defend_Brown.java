@@ -23,7 +23,7 @@ public class Defend_Brown extends CustomCard
 
     public Defend_Brown()
     {
-        super(ID, NAME, "assets/cards/defend_brown", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
+        super(ID, NAME, "Reborn/assets/cards/defend_brown.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.BASIC, CardTarget.SELF);
 
         this.baseBlock = BLOCK;

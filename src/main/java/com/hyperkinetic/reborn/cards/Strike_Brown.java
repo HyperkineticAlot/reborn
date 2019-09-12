@@ -25,7 +25,7 @@ public class Strike_Brown extends CustomCard
 
     public Strike_Brown()
     {
-        super(ID, NAME, "assets/cards/strike_brown", COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.REBORN_BROWN,
+        super(ID, NAME, "Reborn/assets/cards/strike_brown.png", COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.BASIC, CardTarget.ENEMY);
 
         this.baseDamage = DMG;

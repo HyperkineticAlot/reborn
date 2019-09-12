@@ -1,0 +1,9 @@
+{
+  "Reborn:IchorousMemento": {
+    "NAME": "Ichorous Memento",
+    "FLAVOR": "This grime-encrusted locket seems to be a token of a previous life.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, discard the top #b3 cards of your draw pile, then #yDredge 1."
+    ]
+  }
+}

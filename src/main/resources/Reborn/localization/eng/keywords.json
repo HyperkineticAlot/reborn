@@ -1,0 +1,9 @@
+{
+  "Reborn:DredgeKey": {
+    "PROPER_NAME": "Dredge",
+    "NAMES": [
+      "dredge"
+    ],
+    "DESCRIPTION": "To #yDredge X, return X cards from your discard pile to your hand."
+  }
+}
