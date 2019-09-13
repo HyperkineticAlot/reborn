@@ -6,17 +6,17 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 
-@SpirePatch(
+/*@SpirePatch(
         clz = AbstractCreature.class,
         method = "renderRedHealthBar",
-        paramtypez = {SpriteBatch.class })
+        paramtypez = {SpriteBatch.class, float.class, float.class })*/
 public class UndeadRenderHealthPatch
 {
-
     private static final Color undead_black = new Color(0.0F, 0.0F, 0.0F, 0.0F);
-    @SpireInsertPatch(
+
+    /*@SpireInsertPatch(
             rloc = 6,
-            localvars = {"this"})
+            localvars = {"this"})*/
     public static void insertRenderUndeadHealth(SpriteBatch sb, float x, float y, AbstractCreature theCreature)
     {
         if(!theCreature.hasPower("Reborn:UndeathPower")) return;

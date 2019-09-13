@@ -1,5 +1,7 @@
 package com.hyperkinetic.reborn.powers;
 
+import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.hyperkinetic.reborn.actions.UndeathDiscoveryAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -8,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
-public class UndeathPower extends AbstractRebornPower
+public class UndeathPower extends AbstractRebornPower implements HealthBarRenderPower
 {
     public static final String P_ID = "Reborn:UndeathPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(P_ID);
@@ -52,5 +54,17 @@ public class UndeathPower extends AbstractRebornPower
     {
         owner.maxHealth = maxHP;
         owner.currentHealth = currentHP;
+    }
+
+    @Override
+    public int getHealthBarAmount()
+    {
+        return AbstractDungeon.player.currentHealth;
+    }
+
+    @Override
+    public Color getColor()
+    {
+        return new Color(0.0F, 0.0F, 0.0F, 0.0F);
     }
 }
