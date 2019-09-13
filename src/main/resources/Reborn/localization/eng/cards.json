@@ -17,5 +17,20 @@
   "Reborn:Excoriate": {
     "NAME": "Excoriate",
     "DESCRIPTION": "Deal !D! damage. NL Discard 1 card. NL Dredge 1."
+  },
+
+  "Reborn:UndeadMight": {
+    "NAME": "Undead Might",
+    "DESCRIPTION": "Gain 3 Strength."
+  },
+
+  "Reborn:UndeadInsight": {
+    "NAME": "Undead Insight",
+    "DESCRIPTION": "At the start of your turn, Dredge 1."
+  },
+
+  "Reborn:UndeadAgility": {
+    "NAME": "Undead Agility",
+    "DESCRIPTION": "Your first Attack each turn costs 1 less."
   }
 }

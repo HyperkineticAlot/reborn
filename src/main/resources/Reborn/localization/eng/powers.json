@@ -1,3 +1,35 @@
-[
+{
+  "Reborn:UndeathPower":
+  {
+    "NAME": "Undeath",
+    "DESCRIPTIONS": [
+      "At the start of your turn, choose a powerful buff for the remainder of combat."
+    ]
+  },
 
-]
+  "Reborn:RotPower":
+  {
+    "NAME": "Rot",
+    "DESCRIPTIONS": [
+      "At the end of your turn, take #b",
+      " damage and gain 1 Rot."
+    ]
+  },
+
+  "Reborn:UndeadInsightPower":
+  {
+    "NAME": "Undead Insight",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Dredge #b"
+    ]
+  },
+
+  "Reborn:UndeadAgilityPower":
+  {
+    "NAME": "Undead Agility",
+    "DESCRIPTIONS": [
+      "The first attack you play each turn costs #b",
+      " less."
+    ]
+  }
+}

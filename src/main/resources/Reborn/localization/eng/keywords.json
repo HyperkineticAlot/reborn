@@ -12,6 +12,32 @@
     "NAMES": [
       "necrotic"
     ],
-    "DESCRIPTION": "Necrotic cards are not shuffled into your draw pile once discarded."
+    "DESCRIPTION": "Necrotic cards are not shuffled into your draw pile once discarded.",
+  },
+
+  "Reborn:UndeathKey": {
+    "PROPER_NAME": "Undeath",
+    "NAMES": [
+      "undeath",
+      "Undead",
+      "undead"
+    ],
+    "DESCRIPTION": "Wnen you become undead, each stack of Shroud becomes 1 max HP, and you begin to rot. At the start of each turn, gain access to a powerful buff for the rest of combat."
+  },
+
+  "Reborn:RotKey": {
+    "PROPER_NAME": "Rot",
+    "NAMES": [
+      "rot"
+    ],
+    "DESCRIPTION": "At the end of each turn, deals 1 damage for each turn spent rotting."
+  },
+
+  "Reborn:ShroudKey": {
+    "PROPER_NAME": "Shroud",
+    "NAMES": [
+      "shroud"
+    ],
+    "DESCRIPTION": "Stacks of Shroud are consumed and converted to max HP when you beome undead."
   }
 }
