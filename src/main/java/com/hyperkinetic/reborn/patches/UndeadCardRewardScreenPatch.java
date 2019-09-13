@@ -5,8 +5,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.hyperkinetic.reborn.actions.UndeathDiscoveryAction;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 
-import java.util.ArrayList;
-
 @SpirePatch(
         clz = CardRewardScreen.class,
         method = "discoveryOpen",

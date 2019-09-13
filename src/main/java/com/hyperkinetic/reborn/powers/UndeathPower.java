@@ -1,6 +1,7 @@
 package com.hyperkinetic.reborn.powers;
 
 import com.hyperkinetic.reborn.actions.UndeathDiscoveryAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -29,8 +30,9 @@ public class UndeathPower extends AbstractRebornPower
         maxHP = owner.maxHealth;
         currentHP = owner.currentHealth;
 
-        owner.maxHealth = owner.currentHealth = owner.getPower("Shroud").amount;
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner,"Shroud"));
+        owner.maxHealth = owner.currentHealth = owner.getPower("Reborn:Shroud").amount;
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner,"Reborn:Shroud"));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new RotPower(owner, 1), 1));
     }
 
     @Override

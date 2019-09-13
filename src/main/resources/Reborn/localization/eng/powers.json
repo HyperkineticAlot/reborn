@@ -31,5 +31,13 @@
       "The first attack you play each turn costs #b",
       " less."
     ]
+  },
+
+  "Reborn:ShroudPower":
+  {
+    "NAME": "Shroud",
+    "DESCRIPTIONS": [
+      "When you become undead, you lose all Shroud and your max HP becomes #b"
+    ]
   }
 }
