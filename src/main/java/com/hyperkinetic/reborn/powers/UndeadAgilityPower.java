@@ -6,12 +6,11 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
 
-public class UndeadAgilityPower extends AbstractPower
+public class UndeadAgilityPower extends AbstractRebornPower
 {
     public static final String P_ID = "Reborn:UndeadAgilityPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(P_ID);
@@ -32,7 +31,11 @@ public class UndeadAgilityPower extends AbstractPower
         updateDescription();
         loadRegion("beta.png");
 
-        System.out.println(this.region128);
+        for(AbstractCard c : ((AbstractPlayer)owner).hand.group)
+        {
+            reduceCost(c);
+        }
+        this.atStartOfTurn();
     }
 
     @Override
@@ -44,11 +47,6 @@ public class UndeadAgilityPower extends AbstractPower
     @Override
     public void atStartOfTurn()
     {
-        for(AbstractCard c : ((AbstractPlayer)owner).hand.group)
-        {
-            reduceCost(c);
-        }
-
         for(AbstractCard c : ((AbstractPlayer)owner).discardPile.group)
         {
             reduceCost(c);

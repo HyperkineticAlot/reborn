@@ -13,6 +13,7 @@ import com.hyperkinetic.reborn.characters.Reborn;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
 import com.hyperkinetic.reborn.enums.RebornClassEnum;
 import com.hyperkinetic.reborn.relics.IchorousMemento;
+import com.hyperkinetic.reborn.util.AssetLoader;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -38,6 +39,8 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
     private static final String SKILL_BG_PORTRAIT = "Reborn/assets/large/skill_bg.png";
     private static final String POWER_BG_PORTRAIT = "Reborn/assets/large/power_bg.png";
     private static final String ENERGY_ORB_PORTRAIT = "Reborn/assets/large/energy_orb.png";
+
+    public static AssetLoader assets = new AssetLoader();
 
     public RebornMod()
     {
