@@ -32,5 +32,16 @@
   "Reborn:UndeadAgility": {
     "NAME": "Undead Agility",
     "DESCRIPTION": "Your first Attack each turn costs 1 less."
+  },
+
+  "Reborn:DeathlyAura": {
+    "NAME": "Deathly Aura",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Shroud."
+  },
+
+  "Reborn:Undeath": {
+    "NAME": "Undeath",
+    "DESCRIPTION": "Become undead. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 3 Shroud. NL Become undead. Exhaust."
   }
 }

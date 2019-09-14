@@ -17,7 +17,7 @@ public class UndeadMight extends CustomCard
     public static final String NAME = card_strings.NAME;
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
-    private static final int COST = -1;
+    private static final int COST = -2;
 
     public UndeadMight()
     {

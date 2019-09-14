@@ -21,6 +21,8 @@ public class RotPower extends AbstractRebornPower
         this.owner = owner;
         this.amount = amount;
 
+        this.type = PowerType.DEBUFF;
+
         updateDescription();
         loadRegion("rot.png");
     }

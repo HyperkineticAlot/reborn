@@ -3,5 +3,11 @@
     "TEXT": [
       "Choose a card to add to your hand."
     ]
+  },
+
+  "Reborn:UndeathDiscoveryAction": {
+    "TEXT": [
+      "Choose an undeath bonus."
+    ]
   }
 }

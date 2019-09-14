@@ -2,6 +2,7 @@ package com.hyperkinetic.reborn.powers;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -19,7 +20,7 @@ public class UndeadAgilityPower extends AbstractPower
 
     private ArrayList<Pair<AbstractCard, Integer> > reducedCost;
 
-    public UndeadAgilityPower(AbstractPlayer p)
+    public UndeadAgilityPower(AbstractCreature p)
     {
         this.name = NAME;
         this.ID = P_ID;
@@ -30,6 +31,8 @@ public class UndeadAgilityPower extends AbstractPower
 
         updateDescription();
         loadRegion("beta.png");
+
+        System.out.println(this.region128);
     }
 
     @Override

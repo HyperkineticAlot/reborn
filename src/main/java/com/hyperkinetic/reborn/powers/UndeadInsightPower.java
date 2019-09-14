@@ -2,6 +2,7 @@ package com.hyperkinetic.reborn.powers;
 
 import com.hyperkinetic.reborn.actions.DredgeAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -14,7 +15,7 @@ public class UndeadInsightPower extends AbstractPower
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public UndeadInsightPower(AbstractPlayer p)
+    public UndeadInsightPower(AbstractCreature p)
     {
         this.name = NAME;
         this.ID = P_ID;

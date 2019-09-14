@@ -4,6 +4,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -68,6 +69,10 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Fester());
         BaseMod.addCard(new Excoriate());
 
+        // Common
+        BaseMod.addCard(new DeathlyAura());
+        BaseMod.addCard(new Undeath());
+
         // Special
         BaseMod.addCard(new UndeadAgility());
         BaseMod.addCard(new UndeadInsight());
@@ -88,10 +93,11 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
     {
         BaseMod.loadCustomStringsFile(CardStrings.class, "Reborn/localization/eng/cards.json");
         BaseMod.loadCustomStringsFile(CharacterStrings.class, "Reborn/localization/eng/characters.json");
-        //BaseMod.loadCustomStringsFile(PowerStrings.class, "Reborn/localization/eng/powers.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "Reborn/localization/eng/powers.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "Reborn/localization/eng/relics.json");
         BaseMod.loadCustomStringsFile(KeywordStrings.class, "Reborn/localization/eng/keywords.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, "Reborn/localization/eng/ui.json");
+        BaseMod.loadCustomStringsFile(TutorialStrings.class, "Reborn/localization/eng/tutorial.json");
     }
 
     @Override
