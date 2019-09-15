@@ -3,7 +3,7 @@ package com.hyperkinetic.reborn.patches;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
-import com.hyperkinetic.reborn.cards.Fester;
+import com.hyperkinetic.reborn.cards.*;
 import com.megacrit.cardcrawl.actions.defect.ShuffleAllAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -46,5 +46,9 @@ public class NecroticShuffleAllPatch
     static
     {
         necrotic_ids.add(Fester.ID);
+        necrotic_ids.add(CrushingSwing.ID);
+        necrotic_ids.add(LaunchEntrails.ID);
+        necrotic_ids.add(SinisterSurge.ID);
+        necrotic_ids.add(HellboundTechnique.ID);
     }
 }

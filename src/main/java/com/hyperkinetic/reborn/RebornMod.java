@@ -4,6 +4,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -74,6 +75,21 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         // Common
         BaseMod.addCard(new DeathlyAura());
         BaseMod.addCard(new Undeath());
+        BaseMod.addCard(new CrushingSwing());
+        BaseMod.addCard(new StygianLash());
+        BaseMod.addCard(new AgileSwipe());
+        BaseMod.addCard(new BitterSpiral());
+        BaseMod.addCard(new ShroudedStrike());
+
+        // Uncommon
+        BaseMod.addCard(new LaunchEntrails());
+        BaseMod.addCard(new Bladestorm());
+        BaseMod.addCard(new SinisterSurge());
+        BaseMod.addCard(new CrystallizeEssence());
+
+        // Rare
+        BaseMod.addCard(new Necromniscience());
+        BaseMod.addCard(new HellboundTechnique());
 
         // Special
         BaseMod.addCard(new BurstOfSpeed());

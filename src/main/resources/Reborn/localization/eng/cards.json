@@ -48,5 +48,61 @@
   "Reborn:BurstOfSpeed": {
     "NAME": "Burst of Speed",
     "DESCRIPTION": "Gain [E]. NL Draw a card."
+  },
+
+  "Reborn:CrushingSwing": {
+    "NAME": "Crushing Swing",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Necrotic."
+  },
+
+  "Reborn:StygianLash": {
+    "NAME": "Stygian Lash",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak. If you have played three attacks this turn, become undead."
+  },
+
+  "Reborn:AgileSwipe": {
+    "NAME": "Agile Swipe",
+    "DESCRIPTION": "Deal !D! damage. If you have played three attacks this turn, gain [E] and draw a card."
+  },
+
+  "Reborn:BitterSpiral": {
+    "NAME": "Bitter Spiral",
+    "DESCRIPTION": "Gain !M! Shroud. NL Undeath: Deal !D! damage to all enemies instead."
+  },
+
+  "Reborn:ShroudedStrike": {
+    "NAME": "Shrouded Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Shroud."
+  },
+
+  "Reborn:LaunchEntrails": {
+    "NAME": "Launch Entrails",
+    "DESCRIPTION": "Deal !D! damage twice. Increase this card's damage by !M! this combat. Necrotic."
+  },
+
+  "Reborn:Bladestorm": {
+    "NAME": "Bladestorm",
+    "DESCRIPTION": "Deal !D! damage once for each card played this turn."
+  },
+
+  "Reborn:SinisterSurge": {
+    "NAME": "Sinister Surge",
+    "DESCRIPTION": "Gain [E][E][E]. NL Necrotic. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E][E][E]. NL Necrotic."
+  },
+
+  "Reborn:CrystallizeEssence": {
+    "NAME": "Crystallize Essence",
+    "DESCRIPTION": "Gain !M! Shroud. If you are undead, convert your Shroud into Block."
+  },
+
+  "Reborn:Necromniscience": {
+    "NAME": "Necromniscience",
+    "DESCRIPTION": "Discard your hand. NL Dredge 10."
+  },
+
+  "Reborn:HellboundTechnique": {
+    "NAME": "Hellbound Technique",
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Discard a card, then Dredge 3. Gain !M! Shroud. Necrotic."
   }
 }
