@@ -25,6 +25,6 @@ public class ShroudPower extends AbstractRebornPower
     @Override
     public void updateDescription()
     {
-        this.description = DESCRIPTIONS[0] + this.amount;
+        this.description = DESCRIPTIONS[0] + this.amount + CardCrawlGame.languagePack.getUIString("Period").TEXT[0];
     }
 }

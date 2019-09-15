@@ -43,5 +43,10 @@
     "NAME": "Undeath",
     "DESCRIPTION": "Become undead. Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain 3 Shroud. NL Become undead. Exhaust."
+  },
+
+  "Reborn:BurstOfSpeed": {
+    "NAME": "Burst of Speed",
+    "DESCRIPTION": "Gain [E]. NL Draw a card."
   }
 }

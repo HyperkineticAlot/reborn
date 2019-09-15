@@ -35,6 +35,7 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
         owner.maxHealth = owner.currentHealth = owner.getPower("Reborn:ShroudPower").amount;
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner,"Reborn:ShroudPower"));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new RotPower(owner, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new UndeathDiscoveryAction());
     }
 
     @Override
@@ -44,7 +45,7 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
     }
 
     @Override
-    public void atStartOfTurn()
+    public void atStartOfTurnPostDraw()
     {
         AbstractDungeon.actionManager.addToBottom(new UndeathDiscoveryAction());
     }

@@ -12,7 +12,7 @@
     "NAME": "Rot",
     "DESCRIPTIONS": [
       "At the end of your turn, take #b",
-      " damage and gain 1 Rot."
+      " damage and gain 1 #yRot."
     ]
   },
 
@@ -20,7 +20,7 @@
   {
     "NAME": "Undead Insight",
     "DESCRIPTIONS": [
-      "At the start of your turn, Dredge #b"
+      "At the start of your turn, #yDredge #b"
     ]
   },
 
@@ -37,7 +37,7 @@
   {
     "NAME": "Shroud",
     "DESCRIPTIONS": [
-      "When you become undead, you lose all Shroud and your max HP becomes #b"
+      "When you become undead, you lose all #yShroud and your max HP becomes #b"
     ]
   }
 }

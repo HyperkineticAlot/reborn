@@ -29,12 +29,13 @@ public class UndeadInsightPower extends AbstractRebornPower
     @Override
     public void updateDescription()
     {
-        this.description = DESCRIPTIONS[0] + this.amount;
+        this.description = DESCRIPTIONS[0] + this.amount + CardCrawlGame.languagePack.getUIString("Period").TEXT[0];
     }
 
     @Override
     public void atStartOfTurn()
     {
+        flash();
         AbstractDungeon.actionManager.addToBottom(new DredgeAction(this.amount));
     }
 }

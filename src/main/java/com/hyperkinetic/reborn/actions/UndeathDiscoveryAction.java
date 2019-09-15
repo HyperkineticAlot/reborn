@@ -1,7 +1,7 @@
 package com.hyperkinetic.reborn.actions;
 
 import basemod.ReflectionHacks;
-import com.hyperkinetic.reborn.cards.UndeadAgility;
+import com.hyperkinetic.reborn.cards.BurstOfSpeed;
 import com.hyperkinetic.reborn.cards.UndeadInsight;
 import com.hyperkinetic.reborn.cards.UndeadMight;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -97,7 +97,7 @@ public class UndeathDiscoveryAction extends AbstractGameAction
     static
     {
         UNDEATH_OPTIONS = new ArrayList<>();
-        UNDEATH_OPTIONS.add(new UndeadAgility());
+        UNDEATH_OPTIONS.add(new BurstOfSpeed());
         UNDEATH_OPTIONS.add(new UndeadInsight());
         UNDEATH_OPTIONS.add(new UndeadMight());
 
