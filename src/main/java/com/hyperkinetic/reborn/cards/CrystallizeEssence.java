@@ -1,8 +1,10 @@
 package com.hyperkinetic.reborn.cards;
 
 import basemod.abstracts.CustomCard;
+import com.hyperkinetic.reborn.actions.CrystallizeAction;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
 import com.hyperkinetic.reborn.powers.ShroudPower;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -37,14 +39,7 @@ public class CrystallizeEssence extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new ShroudPower(p, this.magicNumber), this.magicNumber));
 
-        if(AbstractDungeon.player.hasPower("Reborn:UndeathPower"))
-        {
-            AbstractDungeon.player.getPower("Reborn:ShroudPower").flash();
-            int amt = AbstractDungeon.player.getPower("Reborn:ShroudPower").amount;
-
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p, p, "Reborn:ShroudPower"));
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, amt));
-        }
+        AbstractDungeon.actionManager.addToBottom(new CrystallizeAction(p));
     }
 
     @Override

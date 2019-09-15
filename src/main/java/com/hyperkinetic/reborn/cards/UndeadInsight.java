@@ -29,7 +29,7 @@ public class UndeadInsight extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new UndeadInsightPower(p), 1));
+                new UndeadInsightPower(p), 2));
     }
 
     @Override

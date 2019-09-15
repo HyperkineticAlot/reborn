@@ -45,7 +45,7 @@ public class Defend_Brown extends CustomCard
     @Override
     public void upgrade()
     {
-        if(upgraded)
+        if(!upgraded)
         {
             upgradeName();
             upgradeBlock(3);

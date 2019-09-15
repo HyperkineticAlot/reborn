@@ -26,7 +26,7 @@
 
   "Reborn:UndeadInsight": {
     "NAME": "Undead Insight",
-    "DESCRIPTION": "At the start of your turn, Dredge 1."
+    "DESCRIPTION": "At the start of your turn, Dredge 2."
   },
 
   "Reborn:UndeadAgility": {
@@ -87,8 +87,8 @@
 
   "Reborn:SinisterSurge": {
     "NAME": "Sinister Surge",
-    "DESCRIPTION": "Gain [E][E][E]. NL Necrotic. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain [E][E][E]. NL Necrotic."
+    "DESCRIPTION": "Gain [E] [E] [E]. NL Necrotic. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Necrotic."
   },
 
   "Reborn:CrystallizeEssence": {
@@ -104,5 +104,10 @@
   "Reborn:HellboundTechnique": {
     "NAME": "Hellbound Technique",
     "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Discard a card, then Dredge 3. Gain !M! Shroud. Necrotic."
+  },
+
+  "Reborn:GrislyCarapace": {
+    "NAME": "Grisly Carapace",
+    "DESCRIPTION": "Whenever you Dredge a card, gain !M! Block."
   }
 }

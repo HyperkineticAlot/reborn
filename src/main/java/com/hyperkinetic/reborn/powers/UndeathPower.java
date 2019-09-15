@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.hyperkinetic.reborn.actions.UndeathDiscoveryAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -35,6 +36,7 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
         owner.maxHealth = owner.currentHealth = owner.getPower("Reborn:ShroudPower").amount;
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner,"Reborn:ShroudPower"));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new RotPower(owner, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, currentHP));
         AbstractDungeon.actionManager.addToBottom(new UndeathDiscoveryAction());
     }
 

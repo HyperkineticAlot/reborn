@@ -22,7 +22,7 @@
       "Undead",
       "undead"
     ],
-    "DESCRIPTION": "Wnen you become undead, each stack of Shroud becomes 1 max HP, and you begin to rot. At the start of each turn, gain access to a powerful buff for the rest of combat."
+    "DESCRIPTION": "Wnen you become undead, your #yShroud is converted to HP, your HP is converted to #yBlock, and you begin to rot. At the start of each turn, gain access to a powerful buff for the rest of combat."
   },
 
   "Reborn:RotKey": {

@@ -39,5 +39,14 @@
     "DESCRIPTIONS": [
       "When you become undead, you lose all #yShroud and your max HP becomes #b"
     ]
+  },
+
+  "Reborn:GrislyCarapacePower":
+  {
+    "NAME": "Grisly Carapace",
+    "DESCRIPTIONS": [
+      "Whenever you #yDredge a card, gain #b",
+      " #yBlock."
+    ]
   }
 }

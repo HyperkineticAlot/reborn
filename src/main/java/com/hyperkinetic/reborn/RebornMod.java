@@ -86,6 +86,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Bladestorm());
         BaseMod.addCard(new SinisterSurge());
         BaseMod.addCard(new CrystallizeEssence());
+        BaseMod.addCard(new GrislyCarapace());
 
         // Rare
         BaseMod.addCard(new Necromniscience());
