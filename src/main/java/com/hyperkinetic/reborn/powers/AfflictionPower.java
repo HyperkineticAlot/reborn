@@ -1,6 +1,6 @@
 package com.hyperkinetic.reborn.powers;
 
-import com.hyperkinetic.reborn.actions.DredgeAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -8,18 +8,18 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class UndeadInsightPower extends AbstractRebornPower
+public class AfflictionPower extends AbstractRebornPower
 {
-    public static final String P_ID = "Reborn:UndeadInsightPower";
+    public static final String P_ID = "Reborn:AfflictionPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(P_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public UndeadInsightPower(AbstractCreature p, int amount)
+    public AfflictionPower(AbstractCreature owner, int amount)
     {
         this.name = NAME;
         this.ID = P_ID;
-        this.owner = p;
+        this.owner = owner;
         this.amount = amount;
 
         updateDescription();
@@ -29,13 +29,13 @@ public class UndeadInsightPower extends AbstractRebornPower
     @Override
     public void updateDescription()
     {
-        this.description = DESCRIPTIONS[0] + this.amount + CardCrawlGame.languagePack.getUIString("Period").TEXT[0];
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
     @Override
     public void atStartOfTurn()
     {
-        flash();
-        AbstractDungeon.actionManager.addToBottom(new DredgeAction(this.amount));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
+                new ShroudPower(owner, this.amount), this.amount));
     }
 }

@@ -18,13 +18,20 @@ public class DredgeAction extends AbstractGameAction
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("Reborn:DredgeAction");
     public static final String[] TEXT = uiStrings.TEXT;
     private float startingDuration;
+    private boolean doRetain;
 
     public DredgeAction(int amount)
+    {
+        this(amount, false);
+    }
+
+    public DredgeAction(int amount, boolean retain)
     {
         this.amount = amount;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.startingDuration = Settings.ACTION_DUR_FAST;
         this.duration = startingDuration;
+        this.doRetain = retain;
     }
 
     public void update()
@@ -55,6 +62,8 @@ public class DredgeAction extends AbstractGameAction
                     AbstractDungeon.player.createHandIsFullDialog();
                     break;
                 }
+
+                if(doRetain && !c.isEthereal) c.retain = true;
 
                 AbstractDungeon.player.discardPile.moveToHand(c, AbstractDungeon.player.discardPile);
 

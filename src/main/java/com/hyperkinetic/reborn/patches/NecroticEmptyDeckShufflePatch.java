@@ -52,5 +52,6 @@ public class NecroticEmptyDeckShufflePatch
         necrotic_ids.add(LaunchEntrails.ID);
         necrotic_ids.add(SinisterSurge.ID);
         necrotic_ids.add(HellboundTechnique.ID);
+        necrotic_ids.add(Scab.ID);
     }
 }

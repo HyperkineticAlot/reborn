@@ -109,5 +109,61 @@
   "Reborn:GrislyCarapace": {
     "NAME": "Grisly Carapace",
     "DESCRIPTION": "Whenever you Dredge a card, gain !M! Block."
+  },
+
+  "Reborn:DeathInDuplets": {
+    "NAME": "Death in Duplets",
+    "DESCRIPTION": "Draw 2 cards. NL Discard 2 cards. NL Dredge 2.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Draw 2 cards. NL Discard 2 cards. NL Dredge 2."
+  },
+
+  "Reborn:BlowFromBelow": {
+    "NAME": "Blow from Below",
+    "DESCRIPTION": "Deal !D! damage. Whenever you draw this card, halve its damage this turn."
+  },
+
+  "Reborn:Scab": {
+    "NAME": "Scab",
+    "DESCRIPTION": "Gain !B! Block. NL Necrotic."
+  },
+
+  "Reborn:GleanFromGore": {
+    "NAME": "Glean from Gore",
+    "DESCRIPTION": "Dredge !M!. NL Put an Infection on top of your draw pile."
+  },
+
+  "Reborn:Infection": {
+    "NAME": "Infection",
+    "DESCRIPTION": "At the end of your turn, lose 1 HP. NL Necrotic."
+  },
+
+  "Reborn:Affliction": {
+    "NAME": "Affliction",
+    "DESCRIPTION": "At the start of each turn, gain !M! Shroud."
+  },
+
+  "Reborn:SinisterScrying": {
+    "NAME": "Sinister Scrying",
+    "DESCRIPTION": "Dredge X, where X is the number of unique card types in your discard pile."
+  },
+
+  "Reborn:BlisterFlesh": {
+    "NAME": "Blister Flesh",
+    "DESCRIPTION": "Gain !B! Block. Put an Infection on top of your draw pile."
+  },
+
+  "Reborn:PsychicBlind": {
+    "NAME": "Psychic Blind",
+    "DESCRIPTION": "Enemy loses !M! Strength this turn. Discard the top 3 cards of your draw pile."
+  },
+
+  "Reborn:ChannelMemory": {
+    "NAME": "Channel Memory",
+    "DESCRIPTION": "Gain !B! Block. NL Dredge !M!. NL If you are undead, the dredged cards are retained."
+  },
+
+  "Reborn:SickeningPall": {
+    "NAME": "Sickening Pall",
+    "DESCRIPTION": "Shuffle your draw pile. NL Deal !D! damage once for each card in your discard pile."
   }
 }

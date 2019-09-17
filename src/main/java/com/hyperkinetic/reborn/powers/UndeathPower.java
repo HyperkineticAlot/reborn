@@ -60,6 +60,12 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
     }
 
     @Override
+    public void atEndOfRound()
+    {
+        onRemove();
+    }
+
+    @Override
     public int getHealthBarAmount()
     {
         return AbstractDungeon.player.currentHealth;

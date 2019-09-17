@@ -14,6 +14,7 @@ import com.hyperkinetic.reborn.enums.AbstractCardEnum;
 import com.hyperkinetic.reborn.enums.RebornClassEnum;
 import com.hyperkinetic.reborn.relics.IchorousMemento;
 import com.hyperkinetic.reborn.util.AssetLoader;
+import com.hyperkinetic.reborn.util.CardEffectDaemon;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -21,6 +22,7 @@ import com.megacrit.cardcrawl.localization.*;
 
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Map;
 
 @SpireInitializer
@@ -41,6 +43,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
     private static final String ENERGY_ORB_PORTRAIT = "Reborn/assets/large/energy_orb.png";
 
     public static AssetLoader assets = new AssetLoader();
+    public static ArrayList<CardEffectDaemon> tracker = new ArrayList<>();
 
     public RebornMod()
     {
@@ -80,6 +83,10 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new AgileSwipe());
         BaseMod.addCard(new BitterSpiral());
         BaseMod.addCard(new ShroudedStrike());
+        BaseMod.addCard(new DeathInDuplets());
+        BaseMod.addCard(new BlowFromBelow());
+        BaseMod.addCard(new Scab());
+        BaseMod.addCard(new GleanFromGore());
 
         // Uncommon
         BaseMod.addCard(new LaunchEntrails());
@@ -87,6 +94,12 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new SinisterSurge());
         BaseMod.addCard(new CrystallizeEssence());
         BaseMod.addCard(new GrislyCarapace());
+        BaseMod.addCard(new Affliction());
+        BaseMod.addCard(new SinisterScrying());
+        BaseMod.addCard(new BlisterFlesh());
+        BaseMod.addCard(new PsychicBlind());
+        BaseMod.addCard(new ChannelMemory());
+        BaseMod.addCard(new SickeningPall());
 
         // Rare
         BaseMod.addCard(new Necromniscience());
@@ -96,6 +109,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new BurstOfSpeed());
         BaseMod.addCard(new UndeadInsight());
         BaseMod.addCard(new UndeadMight());
+        BaseMod.addCard(new Infection());
     }
 
     @Override

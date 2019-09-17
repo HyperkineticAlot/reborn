@@ -4,10 +4,7 @@ import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
-import com.hyperkinetic.reborn.cards.Defend_Brown;
-import com.hyperkinetic.reborn.cards.Excoriate;
-import com.hyperkinetic.reborn.cards.Fester;
-import com.hyperkinetic.reborn.cards.Strike_Brown;
+import com.hyperkinetic.reborn.cards.*;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
 import com.hyperkinetic.reborn.enums.RebornClassEnum;
 import com.hyperkinetic.reborn.relics.IchorousMemento;
@@ -115,7 +112,7 @@ public class Reborn extends CustomPlayer
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Strike_Brown();
+        return new Fester();
     }
 
     @Override

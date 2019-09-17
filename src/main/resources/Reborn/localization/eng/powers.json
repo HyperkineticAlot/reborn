@@ -48,5 +48,14 @@
       "Whenever you #yDredge a card, gain #b",
       " #yBlock."
     ]
+  },
+
+  "Reborn:AfflictionPower":
+  {
+    "NAME": "Affliction",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #yShroud."
+    ]
   }
 }

@@ -39,5 +39,13 @@
       "shroud"
     ],
     "DESCRIPTION": "Stacks of Shroud are consumed and converted to max HP when you beome undead."
+  },
+
+  "Reborn:InfectionKey": {
+    "PROPER_NAME": "Infection",
+    "NAMES": [
+      "infection"
+    ],
+    "DESCRIPTION": "Infections are unplayable, #yNecrotic status cards."
   }
 }
