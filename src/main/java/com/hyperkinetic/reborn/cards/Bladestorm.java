@@ -26,7 +26,7 @@ public class Bladestorm extends CustomCard
     public Bladestorm()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.REBORN_BROWN,
-                CardRarity.UNCOMMON, CardTarget.ENEMY);
+                CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
 
         this.baseDamage = this.damage = DMG;
     }

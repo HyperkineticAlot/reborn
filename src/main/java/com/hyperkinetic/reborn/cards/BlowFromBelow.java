@@ -24,12 +24,15 @@ public class BlowFromBelow extends CustomCard
     private static final int COST = 2;
     private static final int DMG = 26;
 
+    public boolean damageReduced;
+
     public BlowFromBelow()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.COMMON, CardTarget.ENEMY);
 
         this.baseDamage = this.damage = DMG;
+        damageReduced = false;
     }
 
     @Override
@@ -43,14 +46,14 @@ public class BlowFromBelow extends CustomCard
     public void triggerWhenDrawn()
     {
         this.baseDamage /= 2;
-        this.isDamageModified = true;
+        this.damageReduced = true;
         RebornMod.tracker.add(new CardEffectDaemon(this)
         {
             @Override
             public void atEndOfTurn()
             {
                 card.baseDamage *=2;
-                card.isDamageModified = false;
+                ((BlowFromBelow)card).damageReduced = false;
             }
         });
     }
