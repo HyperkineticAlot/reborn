@@ -70,6 +70,29 @@
 
   "Reborn:ShriekPower":
   {
-    "NAME": "Whenever you play a card, discard the top
+    "NAME": "Shriek",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, discard the top #b",
+      " card",
+      " of your draw pile."
+    ]
+  },
+
+  "Reborn:UnnaturalEvolutionPower":
+  {
+    "NAME": "Unnatural Evolution",
+    "DESCRIPTIONS": [
+      "Whenever you play #b",
+      " Attacks in a turn, upgrade your undeath bonuses."
+    ]
+  },
+
+  "Reborn:StartOfTurnDredgePower":
+  {
+    "NAME": "Dredge Hand",
+    "DESCRIPTIONS": [
+      "At the start of your turn, discard your draw pile, then #yDredge #b",
+      "."
+    ]
   }
 }

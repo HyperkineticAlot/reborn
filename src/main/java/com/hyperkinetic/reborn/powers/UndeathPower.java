@@ -37,6 +37,8 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner,"Reborn:ShroudPower"));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new RotPower(owner, 1), 1));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, currentHP));
+        UndeathDiscoveryAction.UNDEATH_OPTIONS.clear();
+        UndeathDiscoveryAction.initializeOptions();
         AbstractDungeon.actionManager.addToBottom(new UndeathDiscoveryAction());
     }
 

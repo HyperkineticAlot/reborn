@@ -3,7 +3,7 @@
   "name": "The Reborn",
   "author_list": ["hyperkinetic"],
   "description": "Adds The Reborn as a playable class :)",
-  "version": "0.0.3a",
+  "version": "0.0.3",
   "sts_version": "01-23-2019",
   "mts_version": "3.10.0",
   "dependencies": ["basemod"]

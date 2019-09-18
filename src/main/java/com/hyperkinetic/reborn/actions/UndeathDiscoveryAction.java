@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class UndeathDiscoveryAction extends AbstractGameAction
 {
-    public static final ArrayList<AbstractCard> UNDEATH_OPTIONS;
+    public static ArrayList<AbstractCard> UNDEATH_OPTIONS;
     private static final UIStrings ui_strings;
     private boolean receivedBuff;
 
@@ -94,12 +94,25 @@ public class UndeathDiscoveryAction extends AbstractGameAction
         }
     }
 
-    static
+    public static void initializeOptions()
     {
-        UNDEATH_OPTIONS = new ArrayList<>();
         UNDEATH_OPTIONS.add(new BurstOfSpeed());
         UNDEATH_OPTIONS.add(new UndeadInsight());
         UNDEATH_OPTIONS.add(new UndeadMight());
+    }
+
+    public static void upgradeOptions()
+    {
+        for(AbstractCard c : UNDEATH_OPTIONS)
+        {
+            c.upgrade();
+        }
+    }
+
+    static
+    {
+        UNDEATH_OPTIONS = new ArrayList<>();
+        initializeOptions();
 
         ui_strings = CardCrawlGame.languagePack.getUIString("Reborn:UndeathDiscoveryAction");
     }

@@ -30,9 +30,9 @@ public class DeathInDuplets extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 2));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
+        AbstractDungeon.actionManager.addToBottom(new DredgeAction(1));
         AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, 2, false));
-        AbstractDungeon.actionManager.addToBottom(new DredgeAction(2));
     }
 
     @Override

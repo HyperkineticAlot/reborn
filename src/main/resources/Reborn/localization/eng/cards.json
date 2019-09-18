@@ -21,12 +21,12 @@
 
   "Reborn:UndeadMight": {
     "NAME": "Undead Might",
-    "DESCRIPTION": "Gain 3 Strength."
+    "DESCRIPTION": "Gain !M! Strength."
   },
 
   "Reborn:UndeadInsight": {
     "NAME": "Undead Insight",
-    "DESCRIPTION": "At the start of your turn, Dredge 2."
+    "DESCRIPTION": "At the start of your turn, Dredge !M!."
   },
 
   "Reborn:UndeadAgility": {
@@ -42,12 +42,13 @@
   "Reborn:Undeath": {
     "NAME": "Undeath",
     "DESCRIPTION": "Become undead. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 3 Shroud. NL Become undead. Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain 5 Shroud. NL Become undead. Exhaust."
   },
 
   "Reborn:BurstOfSpeed": {
     "NAME": "Burst of Speed",
-    "DESCRIPTION": "Gain [E]. NL Draw a card."
+    "DESCRIPTION": "Gain [E]. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain [E]. NL Draw !M! cards."
   },
 
   "Reborn:CrushingSwing": {
@@ -82,13 +83,13 @@
 
   "Reborn:Bladestorm": {
     "NAME": "Bladestorm",
-    "DESCRIPTION": "Deal !D! damage once for each card played this turn."
+    "DESCRIPTION": "Deal !D! damage to a random enemy once for each card played this turn."
   },
 
   "Reborn:SinisterSurge": {
     "NAME": "Sinister Surge",
-    "DESCRIPTION": "Gain [E] [E] [E]. NL Necrotic. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Necrotic."
+    "DESCRIPTION": "Gain [E] [E]. NL Necrotic. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Necrotic. Exhaust."
   },
 
   "Reborn:CrystallizeEssence": {
@@ -98,12 +99,12 @@
 
   "Reborn:Necromniscience": {
     "NAME": "Necromniscience",
-    "DESCRIPTION": "Discard your hand. NL Dredge 10."
+    "DESCRIPTION": "Discard your hand. NL Dredge 10. NL Exhaust."
   },
 
   "Reborn:HellboundTechnique": {
     "NAME": "Hellbound Technique",
-    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Discard a card, then Dredge 3. Gain !M! Shroud. Necrotic."
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. Discard a card, then Dredge 3. Gain !M! Shroud. Exhaust."
   },
 
   "Reborn:GrislyCarapace": {
@@ -113,8 +114,8 @@
 
   "Reborn:DeathInDuplets": {
     "NAME": "Death in Duplets",
-    "DESCRIPTION": "Draw 2 cards. NL Discard 2 cards. NL Dredge 2.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Draw 2 cards. NL Discard 2 cards. NL Dredge 2."
+    "DESCRIPTION": "Draw a card. NL Dredge 1. NL Discard 2 cards.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Draw a card. NL Dredge 1. NL Discard 2 cards."
   },
 
   "Reborn:BlowFromBelow": {
@@ -134,7 +135,7 @@
 
   "Reborn:Infection": {
     "NAME": "Infection",
-    "DESCRIPTION": "At the end of your turn, lose 1 HP. NL Necrotic."
+    "DESCRIPTION": "At the end of your turn or when this card is discarded, lose 3 HP. NL Necrotic."
   },
 
   "Reborn:Affliction": {
@@ -144,7 +145,7 @@
 
   "Reborn:SinisterScrying": {
     "NAME": "Sinister Scrying",
-    "DESCRIPTION": "Dredge X, where X is the number of unique card types in your discard pile."
+    "DESCRIPTION": "Dredge X, where X is the number of unique card types in your discard pile. Exhaust."
   },
 
   "Reborn:BlisterFlesh": {
@@ -190,7 +191,7 @@
     "UPGRADE_DESCRIPTION": "Discard your hand. NL Draw a card for each unique card type in your discard pile plus one."
   },
 
-  "Reborn:ShrieK": {
+  "Reborn:Shriek": {
     "NAME": "Shriek",
     "DESCRIPTION": "Whenever you play a card, discard the top !M! card of your draw pile.",
     "UPGRADE_DESCRIPTION": "Whenever you play a card, discard the top !M! cards of your draw pile."
@@ -200,5 +201,51 @@
     "NAME": "Metamorphosis",
     "DESCRIPTION": "Draw !M! card. NL If your discard pile is larger than your draw pile, become undead.",
     "UPGRADE_DESCRIPTION": "Drawm !M! cards. NL If your discard pile is larger than your draw pile, become undead."
+  },
+
+  "Reborn:Whirl": {
+    "NAME": "Whirl",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. If there is one enemy in combat, gain [E]."
+  },
+
+  "Reborn:Entropy": {
+    "NAME": "Entropy",
+    "DESCRIPTION": "A random card in your discard pile costs 0 this turn. Exhaust."
+  },
+
+  "Reborn:LethalCombination": {
+    "NAME": "Lethal Combination",
+    "DESCRIPTION": "Can only be played if you have played exactly !M! Attacks this turn. NL Deal !D! damage."
+  },
+
+  "Reborn:BileBolt": {
+    "NAME": "Bile Bolt",
+    "DESCRIPTION": "Deal !D! damage. NL Discard the top !M! cards of your draw pile. Next turn, gain [E]."
+  },
+
+  "Reborn:UnnaturalEvolution": {
+    "NAME": "Unnatural Evolution",
+    "DESCRIPTION": "Whenever you play !M! Attacks in a turn, upgrade your undeath bonuses."
+  },
+
+  "Reborn:LichForm": {
+    "NAME": "Lich Form",
+    "DESCRIPTION": "You can't draw cards. NL At the start of your turn, discard your draw pile, then Dredge !M!."
+  },
+
+  "Reborn:Veilstrike": {
+    "NAME": "Veilstrike",
+    "DESCRIPTION": "Ethereal. NL Halve an enemy's HP. NL Halve your HP.",
+    "UPGRADE_DESCRIPTION": "Halve an enemy's HP. NL Halve your HP."
+  },
+
+  "Reborn:DesperateContract": {
+    "NAME": "Desperate Contract",
+    "DESCRIPTION": "Gain !M! Shroud and become undead. NL You gain 8 Rot. NL Exhaust."
+  },
+
+  "Reborn:TripleStrike": {
+    "NAME": "Triple Strike",
+    "DESCRIPTION": "If there is an Attack in your discard pile, deal !D! damage. NL If there is a Skill, gain !B! Block. NL If there is a power, gain [E] and draw a card."
   }
 }

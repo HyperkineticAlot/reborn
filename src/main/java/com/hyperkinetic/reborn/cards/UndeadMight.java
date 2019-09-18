@@ -18,18 +18,21 @@ public class UndeadMight extends CustomCard
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
     private static final int COST = -2;
+    private static final int STRENGTH = 3;
 
     public UndeadMight()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS,
-                CardRarity.SPECIAL, CardTarget.ENEMY);
+                CardRarity.SPECIAL, CardTarget.SELF);
+
+        this.baseMagicNumber = this.magicNumber = STRENGTH;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new StrengthPower(p, 3), 3));
+                new StrengthPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override
@@ -41,6 +44,7 @@ public class UndeadMight extends CustomCard
     @Override
     public void upgrade()
     {
-
+        upgradeName();
+        upgradeMagicNumber(1);
     }
 }

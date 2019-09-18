@@ -30,7 +30,7 @@ public class SinisterSurge extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(3));
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.upgraded ? 3 : 2));
     }
 
     @Override
@@ -45,7 +45,6 @@ public class SinisterSurge extends CustomCard
         if(!upgraded)
         {
             upgradeName();
-            this.exhaust = false;
             this.rawDescription = card_strings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

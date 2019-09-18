@@ -26,6 +26,7 @@ public class SinisterScrying extends CustomCard
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.UNCOMMON, CardTarget.SELF);
+        this.exhaust = true;
     }
 
     @Override

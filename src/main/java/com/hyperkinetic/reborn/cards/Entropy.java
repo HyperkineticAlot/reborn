@@ -1,30 +1,28 @@
 package com.hyperkinetic.reborn.cards;
 
 import basemod.abstracts.CustomCard;
-import com.hyperkinetic.reborn.actions.EnterUndeathAction;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
-import com.hyperkinetic.reborn.powers.ShroudPower;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Undeath extends CustomCard
+import java.util.ArrayList;
+
+public class Entropy extends CustomCard
 {
-    public static final String ID = "Reborn:Undeath";
+    public static final String ID = "Reborn:Entropy";
     private static final CardStrings card_strings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = card_strings.NAME;
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
-    public Undeath()
+    public Entropy()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
-                CardRarity.COMMON, CardTarget.SELF);
+                CardRarity.COMMON, CardTarget.NONE);
 
         this.exhaust = true;
     }
@@ -32,16 +30,22 @@ public class Undeath extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        if(upgraded)
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ShroudPower(p, 5), 5));
+        ArrayList<AbstractCard> targets = new ArrayList<>();
+        for(AbstractCard c : p.discardPile.group)
+        {
+            if(c.costForTurn > 0) targets.add(c);
+        }
 
-        AbstractDungeon.actionManager.addToBottom(new EnterUndeathAction(p));
+        if(targets.isEmpty()) return;
+        int index = Math.round((float)(Math.random() * targets.size()));
+        targets.get(index).costForTurn = 0;
+        targets.get(index).isCostModifiedForTurn = true;
     }
 
     @Override
     public AbstractCard makeCopy()
     {
-        return new Undeath();
+        return new Entropy();
     }
 
     @Override
@@ -50,8 +54,7 @@ public class Undeath extends CustomCard
         if(!upgraded)
         {
             upgradeName();
-            this.rawDescription = card_strings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeBaseCost(0);
         }
     }
 }

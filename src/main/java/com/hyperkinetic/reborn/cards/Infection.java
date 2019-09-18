@@ -19,7 +19,7 @@ public class Infection extends CustomCard
     public static final String NAME = card_strings.NAME;
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
-    private static final int hpLoss = 1;
+    private static final int hpLoss = 3;
 
     public Infection()
     {
@@ -42,6 +42,13 @@ public class Infection extends CustomCard
     {
         this.dontTriggerOnUseCard = true;
         AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(this, true));
+    }
+
+    @Override
+    public void triggerOnManualDiscard()
+    {
+        this.dontTriggerOnUseCard = true;
+        this.use(AbstractDungeon.player, null);
     }
 
     @Override

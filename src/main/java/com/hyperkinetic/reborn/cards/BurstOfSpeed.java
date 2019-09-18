@@ -18,18 +18,21 @@ public class BurstOfSpeed extends CustomCard
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
     private static final int COST = -2;
+    private static final int DRAW = 1;
 
     public BurstOfSpeed()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS,
                 CardRarity.SPECIAL, CardTarget.ENEMY);
+
+        this.baseMagicNumber = this.magicNumber = DRAW;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p,1));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p,this.magicNumber));
     }
 
     @Override
@@ -41,6 +44,12 @@ public class BurstOfSpeed extends CustomCard
     @Override
     public void upgrade()
     {
-
+        upgradeName();
+        upgradeMagicNumber(1);
+        if(!upgraded)
+        {
+            this.rawDescription = card_strings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+        }
     }
 }

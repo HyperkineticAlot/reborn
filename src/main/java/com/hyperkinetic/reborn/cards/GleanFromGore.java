@@ -19,7 +19,7 @@ public class GleanFromGore extends CustomCard
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
     private static final int COST = 0;
-    private static final int DREDGE = 2;
+    private static final int DREDGE = 1;
 
     public GleanFromGore()
     {

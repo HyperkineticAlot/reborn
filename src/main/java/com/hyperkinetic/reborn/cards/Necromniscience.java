@@ -18,12 +18,14 @@ public class Necromniscience extends CustomCard
     public static final String NAME = card_strings.NAME;
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public Necromniscience()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.RARE, CardTarget.SELF);
+
+        this.exhaust = true;
     }
 
     @Override
@@ -45,7 +47,7 @@ public class Necromniscience extends CustomCard
         if(!upgraded)
         {
             upgradeName();
-            upgradeBaseCost(0);
+            upgradeBaseCost(1);
         }
     }
 }

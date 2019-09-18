@@ -1,11 +1,15 @@
 package com.hyperkinetic.reborn.powers;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class DetriticDefensesPower extends AbstractRebornPower
 {
@@ -29,7 +33,12 @@ public class DetriticDefensesPower extends AbstractRebornPower
     public void atEndOfTurn(boolean isPlayer)
     {
         if(!isPlayer) return;
+        Set<AbstractCard.CardType> types = new HashSet<>();
+        for(AbstractCard c : ((AbstractPlayer)owner).discardPile.group)
+        {
+            types.add(c.type);
+        }
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner,
-                ((AbstractPlayer)owner).discardPile.size() * this.amount));
+                types.size() * this.amount));
     }
 }

@@ -1,6 +1,7 @@
 package com.hyperkinetic.reborn.cards;
 
 import basemod.abstracts.CustomCard;
+import basemod.helpers.BaseModCardTags;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
 import com.hyperkinetic.reborn.powers.ShroudPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -30,6 +31,7 @@ public class ShroudedStrike extends CustomCard
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.REBORN_BROWN,
                 CardRarity.COMMON, CardTarget.SELF_AND_ENEMY);
 
+        this.tags.add(CardTags.STRIKE);
         this.baseDamage = this.damage = DMG;
         this.baseMagicNumber = this.magicNumber = SHROUD;
     }

@@ -86,6 +86,10 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new BlowFromBelow());
         BaseMod.addCard(new Scab());
         BaseMod.addCard(new GleanFromGore());
+        BaseMod.addCard(new Whirl());
+        BaseMod.addCard(new Entropy());
+        BaseMod.addCard(new LethalCombination());
+        BaseMod.addCard(new BileBolt());
 
         // Uncommon
         BaseMod.addCard(new LaunchEntrails());
@@ -109,6 +113,11 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         // Rare
         BaseMod.addCard(new Necromniscience());
         BaseMod.addCard(new HellboundTechnique());
+        BaseMod.addCard(new UnnaturalEvolution());
+        BaseMod.addCard(new LichForm());
+        BaseMod.addCard(new Veilstrike());
+        BaseMod.addCard(new DesperateContract());
+        BaseMod.addCard(new TripleStrike());
 
         // Special
         BaseMod.addCard(new BurstOfSpeed());
