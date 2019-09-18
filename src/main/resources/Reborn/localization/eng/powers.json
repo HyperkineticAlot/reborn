@@ -57,5 +57,19 @@
       "At the start of your turn, gain #b",
       " #yShroud."
     ]
+  },
+
+  "Reborn:DetriticDefensesPower":
+  {
+    "NAME": "Detritic Defenses",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " #yBlock for each card in your discard pile."
+    ]
+  },
+
+  "Reborn:ShriekPower":
+  {
+    "NAME": "Whenever you play a card, discard the top
   }
 }

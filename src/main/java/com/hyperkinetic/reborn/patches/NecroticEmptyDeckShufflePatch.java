@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.ui.buttons.SingingBowlButton;
+import com.sun.naming.internal.FactoryEnumeration;
 
 import java.util.ArrayList;
 
@@ -53,5 +54,7 @@ public class NecroticEmptyDeckShufflePatch
         necrotic_ids.add(SinisterSurge.ID);
         necrotic_ids.add(HellboundTechnique.ID);
         necrotic_ids.add(Scab.ID);
+        necrotic_ids.add(Infection.ID);
+        necrotic_ids.add(FatesVerdict.ID);
     }
 }

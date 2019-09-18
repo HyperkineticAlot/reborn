@@ -11,5 +11,7 @@ public abstract class CardEffectDaemon
         card = c;
     }
 
-    public abstract void atEndOfTurn();
+    public void atEndOfTurn() {}
+
+    public void atStartOfTurn() {}
 }

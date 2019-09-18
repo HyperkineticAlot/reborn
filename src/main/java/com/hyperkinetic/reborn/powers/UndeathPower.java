@@ -60,7 +60,7 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
     }
 
     @Override
-    public void atEndOfRound()
+    public void onVictory()
     {
         onRemove();
     }

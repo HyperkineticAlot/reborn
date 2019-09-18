@@ -165,5 +165,40 @@
   "Reborn:SickeningPall": {
     "NAME": "Sickening Pall",
     "DESCRIPTION": "Shuffle your draw pile. NL Deal !D! damage once for each card in your discard pile."
+  },
+
+  "Reborn:GraveStrength": {
+    "NAME": "Grave Strength",
+    "DESCRIPTION": "Unplayable. NL At the start of your turn, if this card is in your discard pile, gain !M! Strength this turn."
+  },
+
+  "Reborn:GraveExpulsion": {
+    "NAME": "Grave Expulsion",
+    "DESCRIPTION": "Ethereal. NL Deal damage equal to the number of cards in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your discard pile."
+  },
+
+  "Reborn:DetriticDefenses": {
+    "NAME": "Detritic Defenses",
+    "DESCRIPTION": "At the end of your turn, gain 1 Block for each unique card type in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the end of your turn, gain 1 Block for each unique card type in your discard pile."
+  },
+
+  "Reborn:Compost": {
+    "NAME": "Compost",
+    "DESCRIPTION": "Discard your hand. NL Draw a card for each unique card type in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. NL Draw a card for each unique card type in your discard pile plus one."
+  },
+
+  "Reborn:ShrieK": {
+    "NAME": "Shriek",
+    "DESCRIPTION": "Whenever you play a card, discard the top !M! card of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card, discard the top !M! cards of your draw pile."
+  },
+
+  "Reborn:Metamorphosis": {
+    "NAME": "Metamorphosis",
+    "DESCRIPTION": "Draw !M! card. NL If your discard pile is larger than your draw pile, become undead.",
+    "UPGRADE_DESCRIPTION": "Drawm !M! cards. NL If your discard pile is larger than your draw pile, become undead."
   }
 }

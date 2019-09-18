@@ -19,7 +19,5 @@ public class CardEffectDaemonEndOfTurnPatch
         {
             effect.atEndOfTurn();
         }
-
-        RebornMod.tracker.clear();
     }
 }

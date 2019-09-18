@@ -4,7 +4,6 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -100,6 +99,12 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new PsychicBlind());
         BaseMod.addCard(new ChannelMemory());
         BaseMod.addCard(new SickeningPall());
+        BaseMod.addCard(new GraveStrength());
+        BaseMod.addCard(new GraveExpulsion());
+        BaseMod.addCard(new DetriticDefenses());
+        BaseMod.addCard(new Compost());
+        BaseMod.addCard(new Shriek());
+        BaseMod.addCard(new Metamorphosis());
 
         // Rare
         BaseMod.addCard(new Necromniscience());
@@ -156,4 +161,25 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addRelicToCustomPool(new IchorousMemento(), AbstractCardEnum.REBORN_BROWN);
     }
 
+    /*public static void initializeCardEffectDaemons(CardGroup drawPile)
+    {
+        tracker.clear();
+        for(AbstractCard c : drawPile.group)
+        {
+            switch(c.cardID)
+            {
+                case BlowFromBelow.ID:
+                    tracker.add(new CardEffectDaemon(c)
+                    {
+                        @Override
+                        public void atEndOfTurn()
+                        {
+                            card.baseDamage *=2;
+                            ((BlowFromBelow)card).damageReduced = false;
+                        }
+                    });
+                    break;
+            }
+        }
+    }*/
 }
