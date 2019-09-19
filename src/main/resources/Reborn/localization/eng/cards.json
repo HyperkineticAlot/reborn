@@ -246,6 +246,6 @@
 
   "Reborn:TripleStrike": {
     "NAME": "Triple Strike",
-    "DESCRIPTION": "If there is an Attack in your discard pile, deal !D! damage. NL If there is a Skill, gain !B! Block. NL If there is a power, gain [E] and draw a card."
+    "DESCRIPTION": "If there is an Attack in your discard pile, deal !D! damage. NL Skill: gain !B! Block. NL Power: gain [E] and draw a card."
   }
 }

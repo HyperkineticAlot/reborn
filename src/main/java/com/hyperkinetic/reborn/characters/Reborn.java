@@ -107,7 +107,7 @@ public class Reborn extends CustomPlayer
 
     @Override
     public Color getCardRenderColor() {
-        return new Color(0.2F, 0.0F, 0.8F, 0.9F);
+        return Color.BROWN;
     }
 
     @Override
@@ -117,7 +117,7 @@ public class Reborn extends CustomPlayer
 
     @Override
     public Color getCardTrailColor() {
-        return new Color(0.2F, 0.0F, 0.8F, 0.9F);
+        return Color.BROWN;
     }
 
     @Override

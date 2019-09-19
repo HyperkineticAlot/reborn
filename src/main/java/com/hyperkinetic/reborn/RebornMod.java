@@ -28,7 +28,7 @@ import java.util.Map;
 public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber, EditKeywordsSubscriber,
         EditStringsSubscriber, EditRelicsSubscriber
 {
-    private static final Color REBORN_COLOR = CardHelper.getColor(0, 0, 0);
+    private static final Color REBORN_COLOR = CardHelper.getColor(62, 56, 42);
 
     private static final String ATTACK_BG = "Reborn/assets/small/attack_bg.png";
     private static final String SKILL_BG = "Reborn/assets/small/skill_bg.png";
