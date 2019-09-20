@@ -10,6 +10,7 @@ import com.hyperkinetic.reborn.enums.RebornClassEnum;
 import com.hyperkinetic.reborn.relics.IchorousMemento;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.blue.Amplify;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -74,7 +75,7 @@ public class Reborn extends CustomPlayer
         starter.add(Defend_Brown.ID);
 
         starter.add(Fester.ID);
-        starter.add(Excoriate.ID);
+        starter.add(Amortality.ID);
 
         return starter;
     }

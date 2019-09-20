@@ -1,50 +1,52 @@
 package com.hyperkinetic.reborn.cards;
 
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
+import com.hyperkinetic.reborn.actions.EnterUndeathAction;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Strike_Brown extends CustomCard
+import java.util.HashSet;
+import java.util.Set;
+
+public class DustToDread extends CustomCard
 {
-    public static final String ID = "Reborn:Strike_Brown";
+    public static final String ID = "Reborn:DustToDread";
     private static final CardStrings card_strings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = card_strings.NAME;
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
     private static final int COST = 1;
-    private static final int DMG = 6;
 
-    public Strike_Brown()
+    public DustToDread()
     {
-        super(ID, NAME, "Reborn/assets/cards/strike_brown.png", COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.REBORN_BROWN,
-                CardRarity.BASIC, CardTarget.ENEMY);
+        super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
+                CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseDamage = this.damage = DMG;
-        this.tags.add(CardTags.STRIKE);
-        this.tags.add(BaseModCardTags.BASIC_STRIKE);
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        Set<CardType> types = new HashSet<>();
+        for(AbstractCard c : p.discardPile.group)
+        {
+            types.add(c.type);
+        }
+
+        if(types.size() >= 3)
+            AbstractDungeon.actionManager.addToBottom(new EnterUndeathAction(p));
     }
 
     @Override
     public AbstractCard makeCopy()
     {
-        return new Strike_Brown();
+        return new DustToDread();
     }
 
     @Override
@@ -53,7 +55,7 @@ public class Strike_Brown extends CustomCard
         if(!upgraded)
         {
             upgradeName();
-            upgradeDamage(3);
+            upgradeBaseCost(0);
         }
     }
 }

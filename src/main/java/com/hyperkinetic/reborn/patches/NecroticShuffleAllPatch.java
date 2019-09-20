@@ -52,5 +52,6 @@ public class NecroticShuffleAllPatch
         necrotic_ids.add(Scab.ID);
         necrotic_ids.add(Infection.ID);
         necrotic_ids.add(FatesVerdict.ID);
+        necrotic_ids.add(RavenousDetritivore.ID);
     }
 }

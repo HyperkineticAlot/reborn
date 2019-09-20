@@ -9,5 +9,14 @@
     "TEXT": [
       "Choose an undeath bonus."
     ]
+  },
+
+  "Reborn:RavenousDetritivoreAction": {
+    "TEXT": [
+      "Feed your detritivores. (Nom nom nom.)",
+      "Nom",
+      " nom",
+      "."
+    ]
   }
 }

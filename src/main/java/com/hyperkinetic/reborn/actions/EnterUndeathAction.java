@@ -1,5 +1,6 @@
 package com.hyperkinetic.reborn.actions;
 
+import com.hyperkinetic.reborn.powers.ModulatePower;
 import com.hyperkinetic.reborn.powers.UndeathPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -26,18 +27,30 @@ public class EnterUndeathAction extends AbstractGameAction
     {
         if(this.duration == this.startDuration)
         {
-            if(!this.target.hasPower("Reborn:ShroudPower"))
+            if(this.target.hasPower("Reborn:UndeathPower"))
+            {
+                isDone = true;
+            }
+
+            else if(!this.target.hasPower("Reborn:ShroudPower"))
             {
                 AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX,
                                                                  AbstractDungeon.player.dialogY,
                                                                  3.0F, tutorial_strings.TEXT[0], true));
                 this.isDone = true;
-                tickDuration();
-                return;
             }
 
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, target, new UndeathPower((AbstractPlayer)target)));
-            this.isDone = true;
+            else
+            {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, target, new UndeathPower((AbstractPlayer)target)));
+                if(this.target.hasPower("Reborn:ModulatePower"))
+                {
+                    this.target.getPower("Reborn:ModulatePower").flash();
+                    ((ModulatePower)this.target.getPower("Reborn:ModulatePower")).modulate();
+                }
+
+                this.isDone = true;
+            }
         }
 
         tickDuration();

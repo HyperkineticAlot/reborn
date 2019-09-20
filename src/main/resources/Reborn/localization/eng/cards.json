@@ -247,5 +247,52 @@
   "Reborn:TripleStrike": {
     "NAME": "Triple Strike",
     "DESCRIPTION": "If there is an Attack in your discard pile, deal !D! damage. NL Skill: gain !B! Block. NL Power: gain [E] and draw a card."
+  },
+
+  "Reborn:Amortality": {
+    "NAME": "Amortality",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 8 Shroud. NL If you have !M! or more Shroud, become undead."
+  },
+
+  "Reborn:AggressiveShift": {
+    "NAME": "Aggressive Shift",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Convert your block into Shroud."
+  },
+
+  "Reborn:Modulate": {
+    "NAME": "Modulate",
+    "DESCRIPTION": "At the start of your turn, lose 1 HP and gain !M! Shroud. NL If you are undead, lose 15 Shroud and heal 5 HP instead."
+  },
+
+  "Reborn:DiseasedStab": {
+    "NAME": "Diseased Stab",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Shroud. NL Put 2 Infection on top of your draw pile."
+  },
+
+  "Reborn:SiftRot": {
+    "NAME": "Sift Rot",
+    "DESCRIPTION": "Discard cards from the top of your draw pile until a Skill is discarded. NL Dredge !M!."
+  },
+
+  "Reborn:DustToDread": {
+    "NAME": "Dust to Dread",
+    "DESCRIPTION": "If you have three or more unique card types in your discard pile, become undead. NL Exhaust."
+  },
+
+  "Reborn:MorbidIntuition": {
+    "NAME": "Morbid Intuition",
+    "DESCRIPTION": "Unplayable. NL At the start of your turn, if this card is in your discard pile, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL At the start of your turn, if this card is in your discard pile, draw !M! cards."
+  },
+
+  "Reborn:MortalDuality": {
+    "NAME": "Mortal Duality",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL If you are undead, this card is played twice.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL If you are undead, this card is played three times."
+  },
+
+  "Reborn:RavenousDetritivore": {
+    "NAME": "Ravenous Detritivore",
+    "DESCRIPTION": "Unplayable. NL At the start of your turn, if this card is in your discard pile, you may exhaust !M! Status cards from your discard pile to gain [E] . Necrotic."
   }
 }

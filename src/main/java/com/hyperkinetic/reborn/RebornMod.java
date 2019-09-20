@@ -72,13 +72,11 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Strike_Brown());
         BaseMod.addCard(new Defend_Brown());
         BaseMod.addCard(new Fester());
-        BaseMod.addCard(new Excoriate());
+        BaseMod.addCard(new Amortality());
 
         // Common
         BaseMod.addCard(new DeathlyAura());
-        BaseMod.addCard(new Undeath());
         BaseMod.addCard(new CrushingSwing());
-        BaseMod.addCard(new StygianLash());
         BaseMod.addCard(new AgileSwipe());
         BaseMod.addCard(new BitterSpiral());
         BaseMod.addCard(new ShroudedStrike());
@@ -90,6 +88,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Entropy());
         BaseMod.addCard(new LethalCombination());
         BaseMod.addCard(new BileBolt());
+        BaseMod.addCard(new Excoriate());
 
         // Uncommon
         BaseMod.addCard(new LaunchEntrails());
@@ -109,6 +108,14 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Compost());
         BaseMod.addCard(new Shriek());
         BaseMod.addCard(new Metamorphosis());
+        BaseMod.addCard(new AggressiveShift());
+        BaseMod.addCard(new Modulate());
+        BaseMod.addCard(new DiseasedStab());
+        BaseMod.addCard(new SiftRot());
+        BaseMod.addCard(new DustToDread());
+        BaseMod.addCard(new StygianLash());
+        BaseMod.addCard(new MorbidIntuition());
+        BaseMod.addCard(new MortalDuality());
 
         // Rare
         BaseMod.addCard(new Necromniscience());
@@ -118,6 +125,7 @@ public class RebornMod implements EditCardsSubscriber, EditCharactersSubscriber,
         BaseMod.addCard(new Veilstrike());
         BaseMod.addCard(new DesperateContract());
         BaseMod.addCard(new TripleStrike());
+        BaseMod.addCard(new RavenousDetritivore());
 
         // Special
         BaseMod.addCard(new BurstOfSpeed());

@@ -94,5 +94,16 @@
       "At the start of your turn, discard your draw pile, then #yDredge #b",
       "."
     ]
+  },
+
+  "Reborn:ModulatePower": {
+    "NAME": "Modulate",
+    "DESCRIPTIONS": [
+      "At the start of your turn, lose #b",
+      " HP and gain #b",
+      " Shroud.",
+      "At the start of your turn, lose up to #b",
+      " Shroud and heal 5 HP for each 15 Shroud lost."
+    ]
   }
 }
