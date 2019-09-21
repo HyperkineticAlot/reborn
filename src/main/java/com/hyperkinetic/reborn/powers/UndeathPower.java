@@ -28,7 +28,7 @@ public class UndeathPower extends AbstractRebornPower implements HealthBarRender
         this.owner = owner;
 
         updateDescription();
-        loadRegion("beta.png");
+        loadRegion("undeath.png");
 
         maxHP = owner.maxHealth;
         currentHP = owner.currentHealth;

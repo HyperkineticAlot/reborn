@@ -1,7 +1,7 @@
 {
   "modid": "reborn",
   "name": "The Reborn",
-  "author_list": ["hyperkinetic"],
+  "author_list": ["hyperkinetic", "BonelessChildrenFoundation"],
   "description": "Adds The Reborn as a playable class :)",
   "version": "0.0.4",
   "sts_version": "01-23-2019",

@@ -24,7 +24,7 @@ public class GrislyCarapacePower extends AbstractRebornPower implements IDredgeL
         this.amount = amount;
 
         updateDescription();
-        loadRegion("beta.png");
+        loadRegion("grislycarapace.png");
     }
 
     @Override

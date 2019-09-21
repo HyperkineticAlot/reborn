@@ -24,7 +24,7 @@ public class ShriekPower extends AbstractRebornPower
         this.amount = amount;
 
         updateDescription();
-        loadRegion("beta.png");
+        loadRegion("shriek.png");
     }
 
     @Override

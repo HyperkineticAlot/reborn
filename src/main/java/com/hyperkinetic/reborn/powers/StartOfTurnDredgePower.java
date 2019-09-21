@@ -23,7 +23,7 @@ public class StartOfTurnDredgePower extends AbstractRebornPower
         this.ID = P_ID;
 
         updateDescription();
-        loadRegion("beta.png");
+        loadRegion("lichform.png");
     }
 
     @Override

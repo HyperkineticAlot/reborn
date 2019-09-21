@@ -30,7 +30,7 @@ public class Reborn extends CustomPlayer
     public static final String CHAR_SHOULDER = "Reborn/assets/char/shoulder.png";
     public static final String CHAR_SHOULDER_2 = "Reborn/assets/char/shoulder.png";
     public static final String CORPSE = "Reborn/assets/char/corpse.png";
-    public static final String MODEL = "Reborn/assets/char/thearchmage.png";
+    public static final String MODEL = "Reborn/assets/char/reborn.png";
     /*public static final String SKELETON_ATLAS = "Archmage/assets/char/skeleton.atlas";
     public static final String SKELETON_JSON = "Archmage/assets/char/skeleton.json";*/
 

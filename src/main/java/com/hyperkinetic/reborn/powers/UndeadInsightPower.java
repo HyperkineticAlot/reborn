@@ -23,7 +23,7 @@ public class UndeadInsightPower extends AbstractRebornPower
         this.amount = amount;
 
         updateDescription();
-        loadRegion("beta.png");
+        loadRegion("undeadinsight.png");
     }
 
     @Override

@@ -23,7 +23,7 @@ public class AfflictionPower extends AbstractRebornPower
         this.amount = amount;
 
         updateDescription();
-        loadRegion("beta.png");
+        loadRegion("affliction.png");
     }
 
     @Override
