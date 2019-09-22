@@ -1,11 +1,13 @@
 package com.hyperkinetic.reborn.powers;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.DexterityPower;
 
 public class RotPower extends AbstractRebornPower
 {
@@ -30,7 +32,7 @@ public class RotPower extends AbstractRebornPower
     @Override
     public void updateDescription()
     {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
     }
 
     @Override
@@ -38,6 +40,8 @@ public class RotPower extends AbstractRebornPower
     {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(owner,
                 new DamageInfo(owner, this.amount, DamageInfo.DamageType.HP_LOSS)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
+                new DexterityPower(owner, -this.amount)));
         flash();
         this.amount++;
     }

@@ -55,7 +55,7 @@ public class UndeathDiscoveryAction extends AbstractGameAction
 
                 ArrayList<AbstractCard> options = new ArrayList<>();
                 for (AbstractCard c : UNDEATH_OPTIONS) {
-                    options.add(c.makeCopy());
+                    options.add(c.makeSameInstanceOf());
                     UnlockTracker.markCardAsSeen(c.cardID);
                 }
 

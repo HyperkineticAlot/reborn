@@ -53,5 +53,8 @@ public class NecroticEmptyDeckShufflePatch
         necrotic_ids.add(Infection.ID);
         necrotic_ids.add(FatesVerdict.ID);
         necrotic_ids.add(RavenousDetritivore.ID);
+        necrotic_ids.add(Putrefaction.ID);
+        necrotic_ids.add(Death.ID);
+        necrotic_ids.add(Life.ID);
     }
 }

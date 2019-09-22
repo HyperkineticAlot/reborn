@@ -12,7 +12,8 @@
     "NAME": "Rot",
     "DESCRIPTIONS": [
       "At the end of your turn, take #b",
-      " damage and gain 1 #yRot."
+      " damage, lose #b",
+      " Dexterity, and gain 1 #yRot."
     ]
   },
 
@@ -104,6 +105,36 @@
       " Shroud.",
       "At the start of your turn, lose up to #b",
       " Shroud and heal 5 HP for each 15 Shroud lost."
+    ]
+  },
+
+  "Reborn:BloodRitualPower": {
+    "NAME": "Blood Ritual",
+    "DESCRIPTIONS": [
+      "This turn, your cards cost HP instead of energy."
+    ]
+  },
+
+  "Reborn:FlexibilityPower": {
+    "NAME": "Flexibility",
+    "DESCRIPTIONS": [
+      "Whenever a #yStatus card is discarded from your draw pile, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+
+  "Reborn:AddLifePower": {
+    "NAME": "After Birth",
+    "DESCRIPTIONS": [
+      "At the end of this turn, add a Life to your discard pile."
+    ]
+  },
+
+  "Reborn:AddDeathPower": {
+    "NAME": "After Life",
+    "DESCRIPTIONS": [
+      "At the end of this turn, add a Death to your discard pile."
     ]
   }
 }

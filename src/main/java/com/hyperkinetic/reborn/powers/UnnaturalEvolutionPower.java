@@ -50,6 +50,7 @@ public class UnnaturalEvolutionPower extends AbstractRebornPower
         if(c.type == AbstractCard.CardType.ATTACK) played++;
         if(played >= threshhold)
         {
+            flash();
             UndeathDiscoveryAction.upgradeOptions();
             played = 0;
         }

@@ -1,46 +1,55 @@
 package com.hyperkinetic.reborn.cards;
 
 import basemod.abstracts.CustomCard;
-import com.hyperkinetic.reborn.actions.DredgeAction;
 import com.hyperkinetic.reborn.enums.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.hyperkinetic.reborn.powers.ShroudPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class GleanFromGore extends CustomCard
+public class Catharsis extends CustomCard
 {
-    public static final String ID = "Reborn:GleanFromGore";
+    public static final String ID = "Reborn:Catharsis";
     private static final CardStrings card_strings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = card_strings.NAME;
     public static final String DESCRIPTION = card_strings.DESCRIPTION;
 
-    private static final int COST = 0;
-    private static final int DREDGE = 1;
+    private static final int COST = 2;
 
-    public GleanFromGore()
+    public Catharsis()
     {
         super(ID, NAME, "Reborn/assets/cards/beta.png", COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.REBORN_BROWN,
-                CardRarity.COMMON, CardTarget.NONE);
+                CardRarity.RARE, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = DREDGE;
         this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new DredgeAction(this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Infection(), 1, false, true));
+        for(AbstractPower power : p.powers)
+        {
+            if(power.type == AbstractPower.PowerType.DEBUFF)
+            {
+                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p, p, power));
+            }
+        }
+
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, p.currentHealth - 1));
     }
 
     @Override
     public AbstractCard makeCopy()
     {
-        return new GleanFromGore();
+        return new Catharsis();
     }
 
     @Override
@@ -49,7 +58,7 @@ public class GleanFromGore extends CustomCard
         if(!upgraded)
         {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeBaseCost(1);
         }
     }
 }

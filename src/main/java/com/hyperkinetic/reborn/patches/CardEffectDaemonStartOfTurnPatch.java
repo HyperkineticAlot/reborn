@@ -4,6 +4,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.hyperkinetic.reborn.RebornMod;
 import com.hyperkinetic.reborn.actions.RavenousDetritivoreAction;
+import com.hyperkinetic.reborn.actions.RewindLifestreamAction;
 import com.hyperkinetic.reborn.cards.GraveStrength;
 import com.hyperkinetic.reborn.cards.MorbidIntuition;
 import com.hyperkinetic.reborn.cards.RavenousDetritivore;
@@ -43,5 +44,7 @@ public class CardEffectDaemonStartOfTurnPatch
 
         if(!detritivores.isEmpty())
             AbstractDungeon.actionManager.addToBottom(new RavenousDetritivoreAction(detritivores));
+
+        RewindLifestreamAction.startCombatHP = AbstractDungeon.player.currentHealth;
     }
 }

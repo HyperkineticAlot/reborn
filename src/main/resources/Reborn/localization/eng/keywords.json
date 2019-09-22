@@ -30,7 +30,7 @@
     "NAMES": [
       "rot"
     ],
-    "DESCRIPTION": "At the end of each turn, deals 1 damage for each turn spent rotting."
+    "DESCRIPTION": "At the end of each turn, deals 1 damage and removes 1 #yDexterity for each turn spent rotting."
   },
 
   "Reborn:ShroudKey": {

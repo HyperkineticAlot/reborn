@@ -130,7 +130,7 @@
 
   "Reborn:GleanFromGore": {
     "NAME": "Glean from Gore",
-    "DESCRIPTION": "Dredge !M!. NL Put an Infection on top of your draw pile."
+    "DESCRIPTION": "Dredge !M!. NL Put an Infection on top of your draw pile. NL Exhaust."
   },
 
   "Reborn:Infection": {
@@ -235,8 +235,8 @@
 
   "Reborn:Veilstrike": {
     "NAME": "Veilstrike",
-    "DESCRIPTION": "Ethereal. NL Halve an enemy's HP. NL Halve your HP.",
-    "UPGRADE_DESCRIPTION": "Halve an enemy's HP. NL Halve your HP."
+    "DESCRIPTION": "Halve an enemy's HP. NL Halve your HP.",
+    "UPGRADE_DESCRIPTION": "Halve ALL enemies' HP. NL Halve your HP."
   },
 
   "Reborn:DesperateContract": {
@@ -294,5 +294,79 @@
   "Reborn:RavenousDetritivore": {
     "NAME": "Ravenous Detritivore",
     "DESCRIPTION": "Unplayable. NL At the start of your turn, if this card is in your discard pile, you may exhaust !M! Status cards from your discard pile to gain [E] . Necrotic."
+  },
+
+  "Reborn:Harden": {
+    "NAME": "Harden",
+    "DESCRIPTION": "Gain !B! Block. Draw !M! card. NL If there is a Status card in your discard pile, gain !B! Block and draw !M! card again."
+  },
+
+  "Reborn:PiercingVision": {
+    "NAME": "Piercing Vision",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your draw pile, Dredge !M!."
+  },
+
+  "Reborn:CripplingSlash": {
+    "NAME": "Crippling Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak to ALL enemies."
+  },
+
+  "Reborn:GlareOfDeath": {
+    "NAME": "Glare of Death",
+    "DESCRIPTION": "Apply !M! Weak. If you are undead, gain !B! Block and apply 1 additional Weak."
+  },
+
+  "Reborn:BloodRitual": {
+    "NAME": "Blood Ritual",
+    "DESCRIPTION": "Can only be played while undead. NL This turn, your cards cost HP instead of energy. NL Exhaust."
+  },
+
+  "Reborn:Putrefaction": {
+    "NAME": "Putrefaction",
+    "DESCRIPTION": "Deal !D! damage for each Rot you have. NL Exhaust. NL Necrotic."
+  },
+
+  "Reborn:Catharsis": {
+    "NAME": "Catharsis",
+    "DESCRIPTION": "Remove all your debuffs. Set your HP to 1. NL Exhaust."
+  },
+
+  "Reborn:Flexibility": {
+    "NAME": "Flexibility",
+    "DESCRIPTION": "Whenever a Status card is discarded from your draw pile, draw a card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever a Status card is discarded from your draw pile, draw a card."
+  },
+
+  "Reborn:SwiftSting": {
+    "NAME": "Swift Sting",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! cards. Put three Infections on top of your draw pile."
+  },
+
+  "Reborn:FinalRite": {
+    "NAME": "Final Rite",
+    "DESCRIPTION": "Ethereal. NL Gain [E] and draw a card for each card played this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] and draw a card for each card played this turn. NL Exhaust."
+  },
+
+  "Reborn:RewindLifestream": {
+    "NAME": "Rewind Lifestream",
+    "DESCRIPTION": "Restart combat, retaining your current buffs. Exhaust all cards named Rewind Lifestream from everywhere."
+  },
+
+  "Reborn:Death": {
+    "NAME": "Death",
+    "DESCRIPTION": "Unplayable unless undead. NL Apply !M! Rot. NL Necrotic. Exhaust."
+  },
+
+  "Reborn:Life": {
+    "NAME": "Life",
+    "DESCRIPTION": "Unplayable when undead. NL Heal !M! HP. NL At the end of your turn, add a Death to your discard pile. Necrotic. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Unplayable when undead. NL Heal !M! HP. NL At the end of your turn, add an upgraded Death to your discard pile. Necrotic. Exhaust."
+  },
+
+  "Reborn:Birth": {
+    "NAME": "Birth",
+    "DESCRIPTION": "Unplayable when undead. NL Draw a card. At the end of your turn, add a Life to your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Unplayable when undead. NL Draw a card. At the end of your turn, add an upgraded Life to your discard pile. NL Exhaust."
   }
 }
