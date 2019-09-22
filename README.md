@@ -7,11 +7,11 @@ by the time the mod is officially released on the Workshop; 64 cards have been i
 
 The Reborn adds a variety of new keywords and playstyles to Slay the Spire.
 
-..* Cards with **Dredge** allow you to return cards from your discard pile to your hand.
-..* Cards with **Necrotic** do not shuffle back into your deck after being discarded.
-..* **Infections** are colorless status cards that help to fuel strategies built around cards that reward having many card
+- Cards with **Dredge** allow you to return cards from your discard pile to your hand.
+- Cards with **Necrotic** do not shuffle back into your deck after being discarded.
+- **Infections** are colorless status cards that help to fuel strategies built around cards that reward having many card
 types in the discard pile.
-..* After accruing sufficient stacks of **Shroud**, the Reborn can play cards that cause them to become **undead**. While undead,
+- After accruing sufficient stacks of **Shroud**, the Reborn can play cards that cause them to become **undead**. While undead,
 you begin to rot, but in exchange you acquire a powerful permanent buff at the start of each turn. Many individual cards also
 become more powerful in undeath.
 
