@@ -3,7 +3,7 @@
   "name": "The Reborn",
   "author_list": ["hyperkinetic", "BonelessChildrenFoundation"],
   "description": "Adds The Reborn as a playable class :)",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "sts_version": "01-23-2019",
   "mts_version": "3.10.0",
   "dependencies": ["basemod"]
